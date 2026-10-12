@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rancangan Website Dukcapil Kabupaten Mamberamo Raya</title>
+<meta name="description" content="Rancangan website informasi layanan administrasi kependudukan Kabupaten Mamberamo Raya.">
+<style>
+:root{--navy:#123b5d;--blue:#176b87;--teal:#dff3f1;--gold:#e9b44c;--ink:#183042;--muted:#607384;--paper:#f5f8fb;--white:#fff;--line:#dce5ec}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
+header{background:var(--navy);color:white} .top{max-width:1120px;margin:auto;padding:18px 22px;display:flex;align-items:center;gap:14px}
+.mark{width:54px;height:54px;border:2px solid #b8d9e5;border-radius:14px;display:grid;place-items:center;font-weight:bold;color:#fff;background:#1b5275}
+.brand strong{display:block;letter-spacing:.04em;font-size:.88rem}.brand span{display:block;font-size:.82rem;color:#d7e8f0}
+nav{background:#0d2f4b;position:sticky;top:0;z-index:5}nav .navinner{max-width:1120px;margin:auto;padding:0 16px;display:flex;gap:4px;overflow-x:auto}
+nav a{color:#fff;text-decoration:none;padding:13px 12px;white-space:nowrap;font-size:.9rem}nav a:hover,nav a:focus{background:#1b5275;border-radius:6px}
+main{max-width:1120px;margin:auto;padding:24px 20px 56px}.hero{background:linear-gradient(120deg,#123b5d,#176b87);border-radius:20px;color:white;padding:clamp(26px,5vw,54px);display:grid;grid-template-columns:1.5fr 1fr;gap:24px;align-items:center;overflow:hidden}
+.kicker{font-size:.78rem;text-transform:uppercase;letter-spacing:.12em;color:#c8e7ee;font-weight:bold}.hero h1{font-size:clamp(1.8rem,4vw,3.2rem);line-height:1.12;margin:10px 0 16px}.hero p{color:#e4f1f5;max-width:650px}.heroart{min-height:180px;display:grid;place-items:center}.river{width:min(100%,310px);aspect-ratio:1.2;border-radius:48% 52% 38% 62%;background:linear-gradient(145deg,#8ccac7 0 20%,#d9e8c2 20% 30%,#347e8e 30% 43%,#b6dcd6 43% 52%,#1c627c 52% 68%,#d7e6be 68%);transform:rotate(-8deg);box-shadow:0 18px 38px #06263c66}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}.btn{display:inline-block;border-radius:9px;padding:11px 16px;text-decoration:none;font-weight:bold;background:var(--gold);color:#263747}.btn.secondary{background:transparent;border:1px solid #c7e2ed;color:white}
+.notice{margin:18px 0;padding:13px 16px;background:#fff5d9;border:1px solid #eed18a;border-radius:10px;color:#624b16;font-size:.92rem}
+.section{padding-top:36px;scroll-margin-top:70px}.sectionhead{display:flex;justify-content:space-between;align-items:end;gap:14px;margin-bottom:16px}.section h2{margin:0;color:var(--navy);font-size:clamp(1.35rem,2.5vw,1.9rem)}.sub{color:var(--muted);margin:5px 0 0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{background:white;border:1px solid var(--line);border-radius:14px;padding:20px;box-shadow:0 5px 18px #18304208}.card h3{margin:8px 0 5px;color:var(--navy);font-size:1.05rem}.card p{margin:0;color:var(--muted);font-size:.94rem}.ico{width:40px;height:40px;border-radius:11px;background:var(--teal);display:grid;place-items:center;font-size:1.25rem}
+.pills{display:flex;flex-wrap:wrap;gap:8px}.pill{background:#e8f0f5;color:#23465e;border-radius:99px;padding:6px 10px;font-size:.85rem}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.stat{background:white;border:1px solid var(--line);padding:18px;border-radius:12px}.stat span{display:block;color:var(--muted);font-size:.88rem}.stat strong{display:block;color:var(--navy);font-size:1.6rem;margin-top:5px}.empty{color:var(--muted);font-size:.85rem}
+table{border-collapse:collapse;width:100%;background:white;border-radius:12px;overflow:hidden}th,td{text-align:left;padding:12px;border-bottom:1px solid var(--line);font-size:.92rem}th{background:#e9f1f6;color:var(--navy)}.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}.linklist{padding-left:20px;margin:8px 0}.linklist li{margin:7px 0}.linklist a{color:#176b87}
+.contact{background:var(--navy);color:white;border-radius:16px;padding:24px}.contact h2{color:white}.contact p{color:#d7e8f0}
+footer{background:#0d2f4b;color:#d7e8f0;padding:24px 20px;text-align:center;font-size:.88rem}footer strong{color:white}
+.small{font-size:.82rem;color:var(--muted)}.contact .small{color:#d7e8f0}
+@media(max-width:760px){.hero{grid-template-columns:1fr}.heroart{min-height:120px}.river{width:180px}.grid{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr 1fr}.two{grid-template-columns:1fr}.sectionhead{display:block}}
+@media(max-width:480px){.grid{grid-template-columns:1fr}.top{padding:14px}.mark{width:44px;height:44px}.brand strong{font-size:.78rem}.brand span{font-size:.74rem}main{padding:16px 12px 40px}.hero{border-radius:14px}.stat strong{font-size:1.35rem}}
+</style>
+</head>
+<body>
+<header>
+  <div class="top">
+    <div class="mark" aria-label="Tempat logo resmi">ADM</div>
+    <div class="brand">
+      <strong>PEMERINTAH KABUPATEN MAMBERAMO RAYA</strong>
+      <span>Rancangan website Dinas Kependudukan dan Pencatatan Sipil</span>
+    </div>
+  </div>
+</header>
+<nav aria-label="Navigasi utama"><div class="navinner">
+  <a href="#beranda">Beranda</a><a href="#layanan">Layanan</a><a href="#standar">Standar Pelayanan</a><a href="#pengaduan">Pengaduan</a><a href="#statistik">Statistik</a><a href="#informasi">Informasi</a><a href="#kontak">Kontak</a>
+</div></nav>
+<main>
+<section class="hero" id="beranda">
+  <div>
+    <div class="kicker">Pelayanan administrasi kependudukan</div>
+    <h1>Informasi layanan yang mudah diakses masyarakat</h1>
+    <p>Temukan informasi persyaratan, prosedur, standar pelayanan, pengaduan masyarakat, dan laporan kinerja Dukcapil Kabupaten Mamberamo Raya.</p>
+    <div class="actions"><a class="btn" href="#layanan">Lihat layanan</a><a class="btn secondary" href="#pengaduan">Informasi pengaduan</a></div>
+  </div>
+  <div class="heroart" aria-hidden="true"><div class="river"></div></div>
+</section>
+<div class="notice"><strong>Catatan rancangan:</strong> Situs ini masih berupa contoh awal, bukan website resmi yang telah disahkan. Sebelum dipublikasikan, ganti informasi contoh dengan data yang disetujui instansi, pasang logo resmi, dan dapatkan persetujuan domain.</div>
+
+<section class="section" id="layanan">
+  <div class="sectionhead"><div><h2>Informasi layanan</h2><p class="sub">Pilih layanan untuk melihat informasi persyaratan dan prosedur yang disahkan instansi.</p></div></div>
+  <div class="grid">
+    <article class="card"><div class="ico">▤</div><h3>Kartu Keluarga</h3><p>Persyaratan perubahan data, penerbitan, dan pembaruan Kartu Keluarga. Isi dengan prosedur resmi yang berlaku.</p></article>
+    <article class="card"><div class="ico">▣</div><h3>KTP-el</h3><p>Informasi perekaman, pencetakan, penggantian, dan pembaruan data KTP-el.</p></article>
+    <article class="card"><div class="ico">✦</div><h3>Akta Kelahiran</h3><p>Persyaratan pencatatan kelahiran dan penerbitan kutipan akta kelahiran.</p></article>
+    <article class="card"><div class="ico">†</div><h3>Akta Kematian</h3><p>Informasi pencatatan peristiwa kematian dan dokumen pendukung.</p></article>
+    <article class="card"><div class="ico">⇄</div><h3>Pindah Datang</h3><p>Informasi perpindahan penduduk dan perubahan alamat sesuai ketentuan.</p></article>
+    <article class="card"><div class="ico">＋</div><h3>Layanan lainnya</h3><p>Tambahkan layanan yang benar-benar tersedia dan telah diverifikasi oleh petugas Dukcapil.</p></article>
+  </div>
+  <p class="small">Catatan: daftar dan persyaratan di atas merupakan kategori awal. Lengkapi dengan persyaratan terbaru yang ditetapkan instansi sebelum dipublikasikan.</p>
+</section>
+
+<section class="section" id="standar">
+  <div class="sectionhead"><div><h2>Standar pelayanan</h2><p class="sub">Informasi yang perlu tersedia untuk setiap jenis layanan.</p></div></div>
+  <div class="card">
+    <div class="pills"><span class="pill">Persyaratan</span><span class="pill">Prosedur</span><span class="pill">Jangka waktu</span><span class="pill">Biaya/tarif sesuai ketentuan</span><span class="pill">Produk layanan</span><span class="pill">Pengaduan</span></div>
+    <p style="margin-top:14px">Unggah standar pelayanan yang telah ditetapkan oleh pejabat berwenang. Jangan mencantumkan jangka waktu atau biaya sebelum diverifikasi.</p>
+  </div>
+</section>
+
+<section class="section" id="pengaduan">
+  <div class="sectionhead"><div><h2>Pengaduan masyarakat</h2><p class="sub">Informasi kanal pengaduan resmi dan mekanisme tindak lanjut.</p></div></div>
+  <div class="two">
+    <div class="card"><div class="ico">✉</div><h3>Cara menyampaikan pengaduan</h3><ol class="linklist"><li>Gunakan kanal resmi yang diumumkan instansi.</li><li>Jelaskan masalah dan waktu kejadian secara ringkas.</li><li>Sertakan kontak balasan jika diperlukan.</li><li>Simpan nomor atau bukti penerimaan pengaduan.</li></ol><p class="small">Tambahkan nomor telepon, email, atau tautan formulir resmi setelah diverifikasi.</p></div>
+    <div class="card"><div class="ico">✓</div><h3>Status tindak lanjut</h3><p>Publikasikan rekapitulasi dengan kategori:</p><div class="pills" style="margin:12px 0"><span class="pill">Dalam proses</span><span class="pill">Selesai</span><span class="pill">Tidak dapat ditindaklanjuti</span></div><p class="small">Jangan menampilkan nama, NIK, nomor KK, nomor telepon, atau isi pengaduan yang mengidentifikasi warga.</p></div>
+  </div>
+</section>
+
+<section class="section" id="statistik">
+  <div class="sectionhead"><div><h2>Statistik pengaduan</h2><p class="sub">Periode pelaporan: <strong>[isi bulan/triwulan dan tahun]</strong></p></div></div>
+  <div class="notice">Data belum dimasukkan. Ganti semua tanda “—” dengan angka dari register pengaduan resmi sebelum halaman dipublikasikan.</div>
+  <div class="stats">
+    <div class="stat"><span>Pengaduan masuk</span><strong>—</strong><small class="empty">Isi dari register</small></div>
+    <div class="stat"><span>Dalam proses</span><strong>—</strong><small class="empty">Jumlah pengaduan</small></div>
+    <div class="stat"><span>Selesai</span><strong>—</strong><small class="empty">Jumlah pengaduan</small></div>
+    <div class="stat"><span>Tidak dapat ditindaklanjuti</span><strong>—</strong><small class="empty">Cantumkan alasan agregat</small></div>
+  </div>
+  <div class="tablewrap" style="margin-top:14px"><table>
+    <thead><tr><th>Jenis pengaduan</th><th>Masuk</th><th>Proses</th><th>Selesai</th><th>Tidak dapat ditindaklanjuti</th></tr></thead>
+    <tbody><tr><td>[Jenis pengaduan 1]</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>[Jenis pengaduan 2]</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td><strong>Total</strong></td><td>—</td><td>—</td><td>—</td><td>—</td></tr></tbody>
+  </table></div>
+  <div class="card" style="margin-top:14px"><h3>Persentase penyelesaian</h3><p>Rumus: jumlah pengaduan selesai ÷ jumlah pengaduan masuk × 100%.</p><p class="small">Isi persentase setelah angka diverifikasi. Jelaskan metode perhitungan dan tanggal pembaruan.</p></div>
+  <p class="small">Publikasikan data agregat saja. Jika pengaduan tidak dapat ditindaklanjuti, sediakan alasan umum tanpa membuka informasi pribadi atau rahasia.</p>
+</section>
+
+<section class="section" id="informasi">
+  <div class="sectionhead"><div><h2>Berita, pengumuman, dan unduhan</h2><p class="sub">Pusat informasi dan dokumen resmi.</p></div></div>
+  <div class="grid">
+    <article class="card"><div class="ico">▤</div><h3>Berita kegiatan</h3><p>Tambahkan berita bertanggal, ringkasan kegiatan, dan foto yang layak dipublikasikan.</p></article>
+    <article class="card"><div class="ico">⚑</div><h3>Pengumuman</h3><p>Umumkan perubahan jadwal, persyaratan, atau informasi pelayanan yang sudah disahkan.</p></article>
+    <article class="card"><div class="ico">↓</div><h3>Dokumen unduhan</h3><p>Tambahkan standar pelayanan, formulir kosong, maklumat pelayanan, dan laporan PDF yang telah diperiksa.</p></article>
+  </div>
+</section>
+
+<section class="section" id="kontak">
+  <div class="contact">
+    <h2>Kontak Dukcapil Kabupaten Mamberamo Raya</h2>
+    <p>Lengkapi bagian ini dengan alamat kantor, jam pelayanan, telepon, email, serta akun media sosial resmi yang telah diverifikasi.</p>
+    <p><strong>Alamat:</strong> [isi alamat resmi kantor]<br><strong>Jam pelayanan:</strong> [isi jam pelayanan resmi]<br><strong>Telepon/email:</strong> [isi kontak resmi]</p>
+    <p class="small">Jangan publikasikan nomor pribadi pegawai tanpa persetujuan instansi.</p>
+  </div>
+</section>
+</main>
+<footer><strong>Dinas Kependudukan dan Pencatatan Sipil Kabupaten Mamberamo Raya</strong><br>Rancangan awal website — lengkapi, verifikasi, dan sahkan sebelum dipublikasikan.</footer>
+</body>
+</html>
