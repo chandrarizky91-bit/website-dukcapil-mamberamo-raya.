@@ -89,13 +89,34 @@
   from { transform: translateX(100%); }
   to { transform: translateX(-100%); }
 }
+
+    .judul-berlawanan {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.judul-berlawanan span {
+  display: inline-block;
+  white-space: nowrap;
+  animation: jalan-balik 12s linear infinite;
+}
+
+@keyframes jalan-balik {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(100%); }
+}
   </style>
 </head>
 <body>
 <header class="masthead" id="beranda">
   <div class="head-inner">
     <img class="crest" src="logo-mamberamo-raya-removebg-preview.png" alt="Lambang Kabupaten Mamberamo Raya">
-    <div class="identity"><div class="judul-bergerak"><span>PEMERINTAH KABUPATEN MAMBERAMO RAYA</span></div><span>Dinas Kependudukan dan Pencatatan Sipil</span></div>
+   <div class="identity">
+  <div class="judul-bergerak"><span>PEMERINTAH KABUPATEN MAMBERAMO RAYA</span></div>
+  <div class="judul-berlawanan"><span>DINAS KEPENDUDUKAN DAN PENCATATAN SIPIL</span></div>
+</div>
     <div class="slogan" aria-label="Slogan pelayanan publik">
       <div>✦ BerAKHLAK<br><small>Berorientasi Pelayanan</small></div><div class="divider"></div><div style="font-size:20px"># bangga<br>melayani bangsa</div>
     </div>
