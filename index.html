@@ -66,7 +66,20 @@
     .draft{font-size:12px;opacity:.85}
     @media(max-width:1000px){.slogan{display:none}.hero{grid-template-columns:1fr .75fr}.hero-copy{padding-left:30px}.services{grid-template-columns:repeat(2,1fr)}}
     @media(max-width:700px){.head-inner{padding:10px 16px;gap:12px}.crest{width:60px;height:60px}.identity{font-size:14px}.identity span{font-size:12px}main{padding:18px 14px 38px}.nav-inner{padding:0 8px}.nav a{padding:12px 13px;font-size:14px}.hero{grid-template-columns:1fr;min-height:0;border-radius:22px}.hero-copy{padding:26px 22px 8px}.hero-copy p{font-size:15px}.hero-visual{min-height:280px}.portrait{max-height:310px;width:min(330px,82%)}.free-badge{width:110px;right:10px;top:12px}.notice{padding:12px;font-size:13px;align-items:flex-start}.notice-icon{width:34px;height:34px;font-size:21px}.services{grid-template-columns:1fr}.service{min-height:110px}.lower-grid{grid-template-columns:1fr}.section-icon{width:50px;height:50px;font-size:24px}h1{font-size:38px}}
-  .judul-bergerak {
+  .identity {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.judul-bergerak {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.judul-bergerak span {
   display: inline-block;
   white-space: nowrap;
   animation: jalan 12s linear infinite;
@@ -82,7 +95,7 @@
 <header class="masthead" id="beranda">
   <div class="head-inner">
     <img class="crest" src="logo-mamberamo-raya-removebg-preview.png" alt="Lambang Kabupaten Mamberamo Raya">
-    <div class="identity"><div class="judul-bergerak">PEMERINTAH KABUPATEN MAMBERAMO RAYA</div><span>Dinas Kependudukan dan Pencatatan Sipil</span></div>
+    <div class="identity"><div class="judul-bergerak"><span>PEMERINTAH KABUPATEN MAMBERAMO RAYA</span></div><span>Dinas Kependudukan dan Pencatatan Sipil</span></div>
     <div class="slogan" aria-label="Slogan pelayanan publik">
       <div>✦ BerAKHLAK<br><small>Berorientasi Pelayanan</small></div><div class="divider"></div><div style="font-size:20px"># bangga<br>melayani bangsa</div>
     </div>
