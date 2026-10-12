@@ -133,6 +133,45 @@
 .nav-inner {
   overflow: visible !important;
 }
+    
+/* Menu dropdown Produk */
+.produk-container {
+  position: relative;
+  display: inline-block;
+}
+
+.produk-menu {
+  display: inline-block;
+}
+
+.produk-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 220px;
+  background: #ffffff;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+  z-index: 9999;
+  overflow: hidden;
+}
+.produk-dropdown a {
+  display: block;
+  padding: 14px 18px;
+  color: #123b70;
+  text-decoration: none;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.produk-dropdown a:hover {
+  background: #e6f4ff;
+  color: #0077cc;
+}
+.produk-container:hover .produk-dropdown,
+.produk-container:focus-within .produk-dropdown {
+  display: block;
+}
 </style>
 </head>
 <body>
@@ -159,7 +198,14 @@
     <a href="maklumat-pelayanan.html">Maklumat Pelayanan</a>
   </div>
   </div>
-<a href="#layanan">▤ &nbsp;Layanan</a>
+<div class="produk-container">
+  <a href="#produk" class="produk-menu">▤ &nbsp;Produk ▾</a>
+  <div class="produk-dropdown">
+    <a href="formulir.html">Formulir</a>
+    <a href="publikasi.html">Publikasi</a>
+    <a href="layanan-online.html">Layanan Online</a>
+  </div>
+</div>
 <a href="standar-pelayanan.html">◇ &nbsp;Standar Pelayanan</a>
 <a href="#pengaduan">▣ &nbsp;Pengaduan</a>
 <a href="#statistik">▥ &nbsp;Statistik</a>
