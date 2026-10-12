@@ -1,10 +1,9 @@
-```html
 <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formulir Pelayanan | Dukcapil Mamberamo Raya</title>
+  <title>Formulir Pelayanan - Dukcapil Mamberamo Raya</title>
 
   <style>
     * {
@@ -13,76 +12,57 @@
 
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #eafff9;
-      color: #164b46;
+      font-family: Arial, sans-serif;
+      background: #e8fbf7;
+      color: #123b59;
     }
 
-    .header {
-      background: linear-gradient(135deg, #087f70, #13b8a6);
+    header {
+      background: linear-gradient(120deg, #087f8c, #08b8a9);
       color: white;
-      padding: 32px 20px;
+      padding: 28px 20px;
       text-align: center;
     }
 
-    .header h1 {
-      margin: 0 0 12px;
-      font-size: clamp(22px, 4vw, 32px);
+    header h1 {
+      margin: 0 0 10px;
+      font-size: 28px;
     }
 
-    .header p {
-      max-width: 760px;
-      margin: auto;
-      line-height: 1.7;
+    header p {
+      margin: 0;
+      line-height: 1.6;
     }
 
-    .container {
-      width: min(1000px, 92%);
-      margin: 32px auto 50px;
-    }
-
-    .breadcrumb {
-      margin-bottom: 20px;
-      font-size: 14px;
-      color: #287b70;
-    }
-
-    .breadcrumb a {
-      color: #087f70;
-      text-decoration: none;
-      font-weight: bold;
+    main {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 18px;
     }
 
     .intro {
       background: white;
-      border-left: 5px solid #13b8a6;
-      border-radius: 12px;
-      padding: 20px;
+      padding: 22px;
+      border-radius: 14px;
       margin-bottom: 24px;
-      box-shadow: 0 4px 15px rgba(0, 100, 85, 0.07);
-      line-height: 1.7;
+      box-shadow: 0 4px 15px #075b6415;
     }
 
     .form-item {
       margin-bottom: 12px;
-      border: 1px solid #b5e8dd;
-      border-radius: 9px;
+      border-radius: 10px;
       overflow: hidden;
-      background: white;
+      box-shadow: 0 3px 10px #075b6412;
     }
 
     .form-item summary {
-      list-style: none;
       cursor: pointer;
+      list-style: none;
       padding: 18px 20px;
-      background: #d5f7ef;
-      color: #086c60;
+      background: #12b8a6;
+      color: white;
       font-weight: bold;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      transition: background 0.2s;
+      font-size: 17px;
     }
 
     .form-item summary::-webkit-details-marker {
@@ -91,267 +71,146 @@
 
     .form-item summary::after {
       content: "+";
-      font-size: 24px;
-      color: #087f70;
-      flex-shrink: 0;
+      float: right;
+      font-size: 22px;
     }
 
     .form-item[open] summary::after {
       content: "−";
     }
 
-    .form-item summary:hover,
-    .form-item[open] summary {
-      background: #a9eee0;
-    }
-
     .form-content {
+      background: white;
       padding: 20px;
       line-height: 1.7;
-      border-top: 1px solid #d5f0e9;
     }
 
-    .form-content h3 {
-      color: #087f70;
-      margin-top: 0;
-    }
-
-    .form-content ul {
-      padding-left: 22px;
-    }
-
-    .notice {
-      padding: 14px 16px;
-      border-radius: 8px;
-      background: #f0fbf8;
-      border: 1px solid #b5e8dd;
-      font-size: 14px;
-    }
-
-    .footer {
-      text-align: center;
-      background: #075e55;
+    .form-content a {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 10px 16px;
+      background: #087f8c;
       color: white;
-      padding: 20px;
-      font-size: 14px;
-      line-height: 1.7;
+      text-decoration: none;
+      border-radius: 7px;
     }
 
-    @media (max-width: 600px) {
-      .header {
-        padding: 25px 16px;
-      }
+    .form-content a:hover {
+      background: #075e68;
+    }
 
-      .form-item summary {
-        padding: 16px;
-        font-size: 14px;
-      }
+    .catatan {
+      margin-top: 24px;
+      background: #d5f5ed;
+      padding: 18px;
+      border-left: 5px solid #12b8a6;
+      border-radius: 8px;
+      line-height: 1.6;
+    }
 
-      .form-content {
-        padding: 16px;
-      }
+    .kembali {
+      display: inline-block;
+      margin: 10px 0 30px;
+      color: #087f8c;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #075e68;
+      color: white;
+      line-height: 1.6;
     }
   </style>
 </head>
 
 <body>
-
-  <header class="header">
+  <header>
     <h1>FORMULIR PELAYANAN</h1>
-    <p>
-      Dinas Kependudukan dan Pencatatan Sipil
-      Kabupaten Mamberamo Raya
-    </p>
+    <p>Dinas Kependudukan dan Pencatatan Sipil</p>
+    <p>Kabupaten Mamberamo Raya</p>
   </header>
 
-  <main class="container">
-
-    <div class="breadcrumb">
-      <a href="index.html">Beranda</a> &rsaquo; Produk &rsaquo; Formulir
-    </div>
-
+  <main>
     <section class="intro">
-      <h2>Daftar Formulir Administrasi Kependudukan</h2>
+      <h2>Formulir, Surat Pernyataan, dan Persyaratan</h2>
       <p>
-        Pilih jenis pelayanan di bawah ini untuk melihat informasi
-        formulir yang diperlukan. Persyaratan dan dokumen unduhan
-        akan ditampilkan setelah disahkan oleh instansi.
+        Pilih jenis layanan di bawah ini untuk melihat informasi formulir
+        dan dokumen pendukung. Pastikan formulir yang digunakan merupakan
+        formulir resmi yang telah disahkan oleh instansi.
       </p>
     </section>
 
     <details class="form-item">
       <summary>Kartu Keluarga (KK)</summary>
       <div class="form-content">
-        <h3>Formulir Kartu Keluarga</h3>
-        <p>Untuk pengurusan penerbitan atau perubahan Kartu Keluarga.</p>
-        <p class="notice">
-          Formulir dan persyaratan resmi akan ditambahkan setelah diverifikasi.
-        </p>
+        <p>Informasi formulir untuk layanan Kartu Keluarga.</p>
+        <p>Silakan hubungi petugas Dukcapil untuk memperoleh formulir resmi dan persyaratan sesuai jenis permohonan.</p>
       </div>
     </details>
 
     <details class="form-item">
       <summary>Kartu Tanda Penduduk Elektronik (KTP-el)</summary>
       <div class="form-content">
-        <h3>Formulir KTP-el</h3>
-        <p>Untuk pelayanan administrasi Kartu Tanda Penduduk Elektronik.</p>
-        <p class="notice">
-          Formulir dan persyaratan resmi akan ditambahkan setelah diverifikasi.
-        </p>
+        <p>Informasi formulir untuk layanan KTP-el.</p>
+        <p>Silakan hubungi petugas Dukcapil untuk memperoleh formulir resmi dan persyaratan sesuai jenis permohonan.</p>
       </div>
     </details>
 
     <details class="form-item">
       <summary>Kartu Identitas Anak (KIA)</summary>
       <div class="form-content">
-        <h3>Formulir KIA</h3>
-        <p>Untuk pelayanan penerbitan Kartu Identitas Anak.</p>
-        <p class="notice">
-          Formulir dan persyaratan resmi akan ditambahkan setelah diverifikasi.
-        </p>
-      </div>
-    </details>
-
-    <details class="form-item">
-      <summary>Pindah Datang Penduduk</summary>
-      <div class="form-content">
-        <h3>Formulir Pindah Datang</h3>
-        <p>Untuk pelayanan perpindahan penduduk masuk ke Kabupaten Mamberamo Raya.</p>
-        <p class="notice">
-          Formulir dan persyaratan resmi akan ditambahkan setelah diverifikasi.
-        </p>
-      </div>
-    </details>
-
-    <details class="form-item">
-      <summary>Perpindahan Penduduk Keluar</summary>
-      <div class="form-content">
-        <h3>Formulir Perpindahan Penduduk</h3>
-        <p>Untuk pelayanan administrasi perpindahan penduduk keluar daerah.</p>
-        <p class="notice">
-          Formulir dan persyaratan resmi akan ditambahkan setelah diverifikasi.
-        </p>
+        <p>Informasi formulir untuk layanan KIA.</p>
+        <p>Silakan hubungi petugas Dukcapil untuk memperoleh formulir resmi dan persyaratan sesuai jenis permohonan.</p>
       </div>
     </details>
 
     <details class="form-item">
       <summary>Akta Kelahiran</summary>
       <div class="form-content">
-        <h3>Formulir Akta Kelahiran</h3>
-        <p>Untuk pelayanan pencatatan kelahiran.</p>
-        <p class="notice">
-          Formulir dan persyaratan resmi akan ditambahkan setelah diverifikasi.
-        </p>
+        <p>Informasi formulir untuk pencatatan kelahiran.</p>
+        <p>Silakan hubungi petugas Dukcapil untuk memperoleh formulir resmi dan persyaratan sesuai jenis permohonan.</p>
       </div>
     </details>
 
     <details class="form-item">
       <summary>Akta Kematian</summary>
       <div class="form-content">
-        <h3>Formulir Akta Kematian</h3>
-        <p>Untuk pelayanan pencatatan kematian.</p>
-        <p class="notice">
-          Formulir dan persyaratan resmi akan ditambahkan setelah diverifikasi.
-        </p>
+        <p>Informasi formulir untuk pencatatan kematian.</p>
+        <p>Silakan hubungi petugas Dukcapil untuk memperoleh formulir resmi dan persyaratan sesuai jenis permohonan.</p>
       </div>
     </details>
 
     <details class="form-item">
-      <summary>Akta Perkawinan</summary>
+      <summary>Akta Perkawinan dan Perceraian</summary>
       <div class="form-content">
-        <h3>Formulir Akta Perkawinan</h3>
-        <p>Untuk pelayanan pencatatan perkawinan sesuai ketentuan yang berlaku.</p>
-        <p class="notice">
-          Formulir dan persyaratan resmi akan ditambahkan setelah diverifikasi.
-        </p>
+        <p>Informasi formulir untuk pencatatan perkawinan atau perceraian.</p>
+        <p>Silakan hubungi petugas Dukcapil untuk memperoleh formulir resmi dan persyaratan sesuai jenis permohonan.</p>
       </div>
     </details>
 
     <details class="form-item">
-      <summary>Akta Perceraian</summary>
+      <summary>Pindah Datang dan Pindah Keluar</summary>
       <div class="form-content">
-        <h3>Formulir Akta Perceraian</h3>
-        <p>Untuk pelayanan pencatatan perceraian sesuai ketentuan yang berlaku.</p>
-        <p class="notice">
-          Formulir dan persyaratan resmi akan ditambahkan setelah diverifikasi.
-        </p>
+        <p>Informasi formulir untuk layanan perpindahan penduduk.</p>
+        <p>Silakan hubungi petugas Dukcapil untuk memperoleh formulir resmi dan persyaratan sesuai jenis permohonan.</p>
       </div>
     </details>
 
-    <details class="form-item">
-      <summary>Akta Pengakuan Anak</summary>
-      <div class="form-content">
-        <h3>Formulir Akta Pengakuan Anak</h3>
-        <p>Untuk pelayanan pencatatan pengakuan anak.</p>
-        <p class="notice">
-          Formulir dan persyaratan resmi akan ditambahkan setelah diverifikasi.
-        </p>
-      </div>
-    </details>
+    <div class="catatan">
+      <strong>Informasi penting:</strong>
+      Daftar ini merupakan halaman informasi awal. Formulir unduhan,
+      persyaratan, dan prosedur resmi perlu ditambahkan setelah diverifikasi
+      oleh Dinas Kependudukan dan Pencatatan Sipil Kabupaten Mamberamo Raya.
+    </div>
 
-    <details class="form-item">
-      <summary>Akta Pengesahan Anak</summary>
-      <div class="form-content">
-        <h3>Formulir Akta Pengesahan Anak</h3>
-        <p>Untuk pelayanan pencatatan pengesahan anak.</p>
-        <p class="notice">
-          Formulir dan persyaratan resmi akan ditambahkan setelah diverifikasi.
-        </p>
-      </div>
-    </details>
-
-    <details class="form-item">
-      <summary>Akta Pengangkatan Anak</summary>
-      <div class="form-content">
-        <h3>Formulir Akta Pengangkatan Anak</h3>
-        <p>Untuk pelayanan pencatatan pengangkatan anak.</p>
-        <p class="notice">
-          Formulir dan persyaratan resmi akan ditambahkan setelah diverifikasi.
-        </p>
-      </div>
-    </details>
-
-    <details class="form-item">
-      <summary>Pembetulan Akta</summary>
-      <div class="form-content">
-        <h3>Formulir Pembetulan Akta</h3>
-        <p>Untuk pelayanan pembetulan akta pencatatan sipil sesuai ketentuan.</p>
-        <p class="notice">
-          Formulir dan persyaratan resmi akan ditambahkan setelah diverifikasi.
-        </p>
-      </div>
-    </details>
-
-    <details class="form-item">
-      <summary>Perubahan Akta</summary>
-      <div class="form-content">
-        <h3>Formulir Perubahan Akta</h3>
-        <p>Untuk pelayanan perubahan data akta sesuai ketentuan yang berlaku.</p>
-        <p class="notice">
-          Formulir dan persyaratan resmi akan ditambahkan setelah diverifikasi.
-        </p>
-      </div>
-    </details>
-
-    <details class="form-item">
-      <summary>Akta Hilang atau Rusak</summary>
-      <div class="form-content">
-        <h3>Formulir Penggantian Akta</h3>
-        <p>Untuk konsultasi pelayanan terkait akta yang hilang atau rusak.</p>
-        <p class="notice">
-          Formulir dan persyaratan resmi akan ditambahkan setelah diverifikasi.
-        </p>
-      </div>
-    </details>
-
+    <a class="kembali" href="index.html">← Kembali ke halaman utama</a>
   </main>
 
-  <footer class="footer">
-    <strong>Dinas Kependudukan dan Pencatatan Sipil</strong><br>
-    Kabupaten Mamberamo Raya<br>
-    Melayani dengan Hati, Data Akurat, Administrasi Kependudukan Berkualitas
+  <footer>
+    Dinas Kependudukan dan Pencatatan Sipil Kabupaten Mamberamo Raya
   </footer>
-
 </body>
 </html>
-```
