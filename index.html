@@ -107,7 +107,41 @@
   from { transform: translateX(-100%); }
   to { transform: translateX(100%); }
 }
-  </style>
+
+.profil-container {
+  position: relative;
+  display: inline-block;
+}
+
+.profil-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 220px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+}
+
+.profil-dropdown a {
+  display: block;
+  padding: 12px 16px;
+  color: #123b60;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.profil-dropdown a:hover {
+  background: #eaf5ff;
+}
+
+.profil-container:hover .profil-dropdown,
+.profil-container:focus-within .profil-dropdown {
+  display: block;
+}
+</style>
 </head>
 <body>
 <header class="masthead" id="beranda">
@@ -124,7 +158,23 @@
 </header>
 <nav class="nav" aria-label="Navigasi utama">
   <div class="nav-inner">
-    <a href="#beranda">⌂ &nbsp;Beranda</a><a href="#layanan">▤ &nbsp;Layanan</a><a href="#standar">♢ &nbsp;Standar Pelayanan</a><a href="#pengaduan">▣ &nbsp;Pengaduan</a><a href="#statistik">▥ &nbsp;Statistik</a><a href="#informasi">ⓘ &nbsp;Informasi</a><a href="#kontak">☎ &nbsp;Kontak</a>
+<a href="#beranda">⌂ &nbsp;Beranda</a>
+<div class="profil-container">
+  <a href="#profil" class="profil-menu">▤ &nbsp;Profil ▾</a>
+  <div class="profil-dropdown">
+    <a href="#struktur">Struktur Organisasi</a>
+    <a href="#tugas-fungsi">Tugas dan Fungsi</a>
+    <a href="#maklumat">Maklumat Pelayanan</a>
+    <a href="#standar">Standar Pelayanan</a>
+  </div>
+</div>
+<a href="#layanan">▤ &nbsp;Layanan</a>
+<a href="#standar">◇ &nbsp;Standar Pelayanan</a>
+<a href="#pengaduan">▣ &nbsp;Pengaduan</a>
+<a href="#statistik">▥ &nbsp;Statistik</a>
+<a href="#informasi">Informasi</a>
+<a href="#kontak">Kontak</a>
+<a href="#layanan">▤ &nbsp;Layanan</a><a href="#standar">♢ &nbsp;Standar Pelayanan</a><a href="#pengaduan">▣ &nbsp;Pengaduan</a><a href="#statistik">▥ &nbsp;Statistik</a><a href="#informasi">ⓘ &nbsp;Informasi</a><a href="#kontak">☎ &nbsp;Kontak</a>
   </div>
 </nav>
 <main>
