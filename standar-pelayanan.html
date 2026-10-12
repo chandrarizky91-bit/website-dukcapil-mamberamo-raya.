@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alur Standar Pelayanan | Dukcapil Mamberamo Raya</title>
+  <meta name="description" content="Alur standar pelayanan Dinas Kependudukan dan Pencatatan Sipil Kabupaten Mamberamo Raya.">
+  <style>
+    :root {
+      --biru: #07519a;
+      --biru-gelap: #073b78;
+      --hijau: #159447;
+      --latar: #eef7fc;
+      --teks: #17324f;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--teks);
+      background: linear-gradient(135deg, #e8f6ff, #f7fcff 55%, #eaf8ee);
+      min-height: 100vh;
+    }
+    .kepala {
+      padding: 22px 16px;
+      text-align: center;
+      color: white;
+      background: linear-gradient(110deg, var(--biru-gelap), var(--biru) 70%, var(--hijau));
+      border-bottom: 5px solid #8bd34b;
+    }
+    .kepala h1 {
+      margin: 0 0 8px;
+      font-size: clamp(1.35rem, 3vw, 2.2rem);
+      line-height: 1.2;
+    }
+    .kepala p {
+      margin: 0;
+      font-size: clamp(.9rem, 1.7vw, 1.05rem);
+    }
+    .wadah {
+      width: min(1500px, calc(100% - 28px));
+      margin: 28px auto;
+      padding: clamp(12px, 2.5vw, 28px);
+      background: rgba(255,255,255,.92);
+      border: 1px solid #d5e8f6;
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(7,59,120,.12);
+    }
+    .gambar-alur {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .catatan {
+      margin: 18px 0 0;
+      padding: 12px 15px;
+      border-left: 4px solid var(--hijau);
+      border-radius: 8px;
+      background: #f0fbf3;
+      line-height: 1.6;
+    }
+    .aksi {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 22px;
+    }
+    .tombol {
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 9px;
+      text-decoration: none;
+      font-weight: 700;
+      color: white;
+      background: var(--biru);
+    }
+    .tombol:hover { background: var(--biru-gelap); }
+    .tombol-hijau { background: var(--hijau); }
+    .tombol-hijau:hover { background: #0c7336; }
+    footer {
+      text-align: center;
+      padding: 18px 12px 26px;
+      color: #35556f;
+      font-size: .9rem;
+    }
+    @media print {
+      body { background: white; }
+      .kepala, .aksi, footer, .catatan { display: none; }
+      .wadah { width: 100%; margin: 0; padding: 0; border: 0; box-shadow: none; }
+    }
+  </style>
+</head>
+<body>
+  <header class="kepala">
+    <h1>Alur Standar Pelayanan</h1>
+    <p>Dinas Kependudukan dan Pencatatan Sipil Kabupaten Mamberamo Raya</p>
+  </header>
+
+  <main class="wadah">
+    <img
+      class="gambar-alur"
+      src="alur-standar-pelayanan.png"
+      alt="Diagram alur standar pelayanan Dukcapil Kabupaten Mamberamo Raya"
+    >
+    <p class="catatan">
+      Alur di atas merupakan gambaran umum proses pelayanan. Persyaratan dan waktu
+      penyelesaian dapat berbeda menurut jenis layanan serta ketentuan resmi yang berlaku.
+    </p>
+    <div class="aksi">
+      <a class="tombol" href="index.html">← Kembali ke Beranda</a>
+      <a class="tombol tombol-hijau" href="alur-standar-pelayanan.png" target="_blank" rel="noopener">Buka Gambar</a>
+    </div>
+  </main>
+
+  <footer>
+    Dinas Kependudukan dan Pencatatan Sipil Kabupaten Mamberamo Raya
+  </footer>
+</body>
+</html>
