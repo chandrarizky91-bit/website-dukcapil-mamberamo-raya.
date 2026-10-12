@@ -1,209 +1,207 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formulir Pelayanan - Dukcapil Mamberamo Raya</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulir Pelayanan - Dukcapil Mamberamo Raya</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+<style>
+* {
+  box-sizing: border-box;
+}
 
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #e8fbf7;
-      color: #123b59;
-    }
+body {
+  margin: 0;
+  padding: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: #444;
+  font-size: 14px;
+  line-height: 1.65;
+}
 
-    header {
-      background: linear-gradient(120deg, #087f8c, #08b8a9);
-      color: white;
-      padding: 28px 20px;
-      text-align: center;
-    }
+main {
+  max-width: 1200px;
+  margin: auto;
+}
 
-    header h1 {
-      margin: 0 0 10px;
-      font-size: 28px;
-    }
+h1 {
+  color: #087f8c;
+  font-size: 24px;
+  margin: 0 0 8px;
+}
 
-    header p {
-      margin: 0;
-      line-height: 1.6;
-    }
+.pengantar {
+  color: #555;
+  margin-bottom: 28px;
+}
 
-    main {
-      max-width: 1000px;
-      margin: 30px auto;
-      padding: 0 18px;
-    }
+.layanan {
+  padding: 22px 0 32px;
+  border-bottom: 1px solid #eeeeee;
+}
 
-    .intro {
-      background: white;
-      padding: 22px;
-      border-radius: 14px;
-      margin-bottom: 24px;
-      box-shadow: 0 4px 15px #075b6415;
-    }
+.layanan h2 {
+  margin: 0 0 4px;
+  color: #00852b;
+  font-size: 15px;
+}
 
-    .form-item {
-      margin-bottom: 12px;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 3px 10px #075b6412;
-    }
+.layanan ol {
+  padding-left: 18px;
+  margin: 0;
+}
 
-    .form-item summary {
-      cursor: pointer;
-      list-style: none;
-      padding: 18px 20px;
-      background: #12b8a6;
-      color: white;
-      font-weight: bold;
-      font-size: 17px;
-    }
+.layanan li {
+  padding-left: 0;
+  margin-bottom: 3px;
+}
 
-    .form-item summary::-webkit-details-marker {
-      display: none;
-    }
+.download {
+  color: #ff1717;
+  font-weight: bold;
+  text-decoration: none;
+}
 
-    .form-item summary::after {
-      content: "+";
-      float: right;
-      font-size: 22px;
-    }
+.download:hover {
+  text-decoration: underline;
+}
 
-    .form-item[open] summary::after {
-      content: "−";
-    }
+.catatan {
+  color: #ed2525;
+  font-style: italic;
+  margin: 5px 0;
+}
 
-    .form-content {
-      background: white;
-      padding: 20px;
-      line-height: 1.7;
-    }
+.subdaftar {
+  margin: 4px 0 4px 14px;
+}
 
-    .form-content a {
-      display: inline-block;
-      margin-top: 8px;
-      padding: 10px 16px;
-      background: #087f8c;
-      color: white;
-      text-decoration: none;
-      border-radius: 7px;
-    }
+.kembali {
+  display: inline-block;
+  margin: 24px 0;
+  color: #087f8c;
+  font-weight: bold;
+  text-decoration: none;
+}
 
-    .form-content a:hover {
-      background: #075e68;
-    }
+footer {
+  border-top: 1px solid #eee;
+  padding-top: 16px;
+  color: #666;
+  font-size: 12px;
+}
 
-    .catatan {
-      margin-top: 24px;
-      background: #d5f5ed;
-      padding: 18px;
-      border-left: 5px solid #12b8a6;
-      border-radius: 8px;
-      line-height: 1.6;
-    }
-
-    .kembali {
-      display: inline-block;
-      margin: 10px 0 30px;
-      color: #087f8c;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #075e68;
-      color: white;
-      line-height: 1.6;
-    }
-  </style>
+@media (max-width: 600px) {
+  body {
+    padding: 16px;
+  }
+}
+</style>
 </head>
 
 <body>
-  <header>
-    <h1>FORMULIR PELAYANAN</h1>
-    <p>Dinas Kependudukan dan Pencatatan Sipil</p>
-    <p>Kabupaten Mamberamo Raya</p>
-  </header>
+<main>
 
-  <main>
-    <section class="intro">
-      <h2>Formulir, Surat Pernyataan, dan Persyaratan</h2>
-      <p>
-        Pilih jenis layanan di bawah ini untuk melihat informasi formulir
-        dan dokumen pendukung. Pastikan formulir yang digunakan merupakan
-        formulir resmi yang telah disahkan oleh instansi.
-      </p>
-    </section>
+<h1>FORMULIR, SPTJM, SURAT PERNYATAAN PERMOHONAN</h1>
+<p class="pengantar">
+Berikut informasi formulir dan persyaratan untuk pengurusan dokumen
+kependudukan. Gunakan formulir resmi yang sesuai dengan jenis layanan.
+</p>
 
-    <details class="form-item">
-      <summary>Kartu Keluarga (KK)</summary>
-      <div class="form-content">
-        <p>Informasi formulir untuk layanan Kartu Keluarga.</p>
-        <p>Silakan hubungi petugas Dukcapil untuk memperoleh formulir resmi dan persyaratan sesuai jenis permohonan.</p>
-      </div>
-    </details>
+<section class="layanan">
+<h2>Pergantian Status Perkawinan</h2>
+<ol>
+<li>Download dan mengisi FORMULIR F1.02
+  <a class="download" href="#" onclick="return false;">&gt;&gt; Download Di Sini &lt;&lt;</a>
+</li>
+<li>Asli KK/KTP-el Suami</li>
+<li>Asli KK/KTP-el Istri</li>
+<li>Asli Buku Nikah/Surat Nikah Gereja/Kutipan Akta Perkawinan/Kutipan Akta Perceraian</li>
+<li>Download dan mengisi SPTJM Perkawinan atau Perceraian belum tercatat (F-1.05),
+  <em>jika tidak dapat melampirkan Kutipan Akta Perkawinan atau Akta Perceraian.</em>
+  <a class="download" href="#" onclick="return false;">&gt;&gt; Download Di Sini &lt;&lt;</a>
+</li>
+</ol>
+<p class="catatan">* Bila tidak memiliki buku nikah/surat nikah gereja/akta perkawinan/akta perceraian, silakan datang ke Kantor Dukcapil.</p>
+</section>
 
-    <details class="form-item">
-      <summary>Kartu Tanda Penduduk Elektronik (KTP-el)</summary>
-      <div class="form-content">
-        <p>Informasi formulir untuk layanan KTP-el.</p>
-        <p>Silakan hubungi petugas Dukcapil untuk memperoleh formulir resmi dan persyaratan sesuai jenis permohonan.</p>
-      </div>
-    </details>
+<section class="layanan">
+<h2>Pisah Kartu Keluarga Dalam Satu Alamat</h2>
+<ol>
+<li>Download dan mengisi FORMULIR F1.02
+  <a class="download" href="#" onclick="return false;">&gt;&gt; Download Di Sini &lt;&lt;</a>
+</li>
+<li>Asli Kartu Keluarga</li>
+<li>Asli KTP-el</li>
+</ol>
+<div class="subdaftar">
+  <p class="catatan">* Jika pisah karena sudah menikah, silakan daftar di menu Kartu Keluarga Pergantian Status Kawin.</p>
+  <p class="catatan">* Jika pisah karena pindah alamat dalam kota, silakan daftar di menu Pindah Alamat Dalam Kota.</p>
+  <p class="catatan">* Jika pisah karena pindah alamat luar kabupaten/kota, silakan daftar di menu Pindah Alamat Luar Kabupaten/Kota.</p>
+  <p class="catatan">* Jika pisah karena meninggal, silakan daftar di menu Akta Kematian.</p>
+</div>
+</section>
 
-    <details class="form-item">
-      <summary>Kartu Identitas Anak (KIA)</summary>
-      <div class="form-content">
-        <p>Informasi formulir untuk layanan KIA.</p>
-        <p>Silakan hubungi petugas Dukcapil untuk memperoleh formulir resmi dan persyaratan sesuai jenis permohonan.</p>
-      </div>
-    </details>
+<section class="layanan">
+<h2>Perubahan Data Penduduk</h2>
+<ol>
+<li>Download dan mengisi FORMULIR F1.02
+  <a class="download" href="#" onclick="return false;">&gt;&gt; Download Di Sini &lt;&lt;</a>
+</li>
+<li>Asli Kartu Keluarga</li>
+<li>Download dan mengisi Surat Pernyataan Perubahan Elemen Data Kependudukan (F1.06)
+  <a class="download" href="#" onclick="return false;">&gt;&gt; Download Di Sini &lt;&lt;</a>
+</li>
+<li>Asli dokumen pendukung:
+  <div class="subdaftar">
+    a. Perubahan nama lengkap, jenis kelamin, TTL, nama orang tua: lampirkan akta kelahiran.<br>
+    b. Perubahan NIK (data ganda) usia 17 tahun ke atas: lampirkan KTP-el.<br>
+    c. Perubahan agama: lampirkan surat keterangan dari pemuka agama.<br>
+    d. Perubahan pendidikan: lampirkan ijazah.<br>
+    e. Perubahan pekerjaan:<br>
+    &nbsp;&nbsp;- Pekerjaan yang memiliki SK: lampirkan SK pekerjaan.<br>
+    &nbsp;&nbsp;- Pekerjaan yang tidak memiliki SK: lampirkan surat keterangan pekerjaan dari kelurahan.<br>
+    f. Perubahan golongan darah: lampirkan kartu golongan darah.<br>
+    g. Perubahan status hubungan keluarga: lampirkan akta kelahiran atau buku nikah/akta nikah.
+  </div>
+</li>
+</ol>
+<p class="catatan">* Perubahan alamat, RT/RW silakan lihat menu Pindah Alamat Dalam Kota.</p>
+</section>
 
-    <details class="form-item">
-      <summary>Akta Kelahiran</summary>
-      <div class="form-content">
-        <p>Informasi formulir untuk pencatatan kelahiran.</p>
-        <p>Silakan hubungi petugas Dukcapil untuk memperoleh formulir resmi dan persyaratan sesuai jenis permohonan.</p>
-      </div>
-    </details>
+<section class="layanan">
+<h2>Kartu Keluarga Hilang</h2>
+<ol>
+<li>Download dan mengisi FORMULIR F1.02
+  <a class="download" href="#" onclick="return false;">&gt;&gt; Download Di Sini &lt;&lt;</a>
+</li>
+<li>Surat keterangan kehilangan Kartu Keluarga dari Kepolisian</li>
+</ol>
+<p class="catatan">* Masa berlaku surat keterangan hilang selama 14 hari.</p>
+<ol start="3">
+<li>Asli KTP-el (apabila hilang, lampirkan surat keterangan kehilangan KTP-el).</li>
+</ol>
+<p class="catatan">* Bila warga tidak mengetahui NIK dan nomor Kartu Keluarga, silakan datang ke Dukcapil.</p>
+</section>
 
-    <details class="form-item">
-      <summary>Akta Kematian</summary>
-      <div class="form-content">
-        <p>Informasi formulir untuk pencatatan kematian.</p>
-        <p>Silakan hubungi petugas Dukcapil untuk memperoleh formulir resmi dan persyaratan sesuai jenis permohonan.</p>
-      </div>
-    </details>
+<section class="layanan">
+<h2>Kartu Keluarga Rusak</h2>
+<ol>
+<li>Download dan mengisi FORMULIR F1.02
+  <a class="download" href="#" onclick="return false;">&gt;&gt; Download Di Sini &lt;&lt;</a>
+</li>
+<li>Asli Kartu Keluarga yang rusak <em>(tidak berbarcode atau tidak sinkron)</em></li>
+</ol>
+</section>
 
-    <details class="form-item">
-      <summary>Akta Perkawinan dan Perceraian</summary>
-      <div class="form-content">
-        <p>Informasi formulir untuk pencatatan perkawinan atau perceraian.</p>
-        <p>Silakan hubungi petugas Dukcapil untuk memperoleh formulir resmi dan persyaratan sesuai jenis permohonan.</p>
-      </div>
-    </details>
+<a class="kembali" href="index.html">← Kembali ke halaman utama</a>
 
-    <details class="form-item">
-      <summary>Pindah Datang dan Pindah Keluar</summary>
-      <div class="form-content">
-        <p>Informasi formulir untuk layanan perpindahan penduduk.</p>
-        <p>Silakan hubungi petugas Dukcapil untuk memperoleh formulir resmi dan persyaratan sesuai jenis permohonan.</p>
-      </div>
-    </details>
+<footer>
+Dinas Kependudukan dan Pencatatan Sipil Kabupaten Mamberamo Raya
+</footer>
 
-    <a class="kembali" href="index.html">← Kembali ke halaman utama</a>
-  </main>
-
-  <footer>
-    Dinas Kependudukan dan Pencatatan Sipil Kabupaten Mamberamo Raya
-  </footer>
+</main>
 </body>
 </html>
