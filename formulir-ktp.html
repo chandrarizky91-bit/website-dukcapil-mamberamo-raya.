@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Persyaratan KTP-el | Dukcapil</title>
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #444;
+  background: #fff;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+main {
+  max-width: 1400px;
+  margin: auto;
+}
+
+details.form-item {
+  border: 1px solid #ddd;
+  background: #fff;
+}
+
+details.form-item > summary {
+  list-style: none;
+  cursor: pointer;
+  background: #eee;
+  padding: 14px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+}
+
+details.form-item > summary::-webkit-details-marker {
+  display: none;
+}
+
+details.form-item > summary::after {
+  content: "+";
+  position: absolute;
+  right: 20px;
+}
+
+details.form-item[open] > summary::after {
+  content: "−";
+}
+
+.form-content {
+  padding: 20px 18px;
+}
+
+.layanan {
+  padding: 24px 0 60px;
+  border-bottom: 1px solid #eee;
+}
+
+.layanan:last-child {
+  border-bottom: none;
+}
+
+.layanan h2 {
+  margin: 0 0 2px;
+  color: green;
+  font-size: 14px;
+}
+
+.layanan ol {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.layanan li {
+  margin-bottom: 2px;
+}
+
+.download {
+  color: red;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.catatan {
+  color: red;
+  font-style: italic;
+  margin: 4px 12px;
+  font-size: 12px;
+}
+
+.kembali {
+  display: inline-block;
+  margin-top: 20px;
+  color: #087f8c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  body { padding: 8px; }
+  details.form-item > summary {
+    padding: 16px 36px 16px 14px;
+    font-size: 16px;
+  }
+  .form-content { padding: 16px 12px; }
+}
+</style>
+</head>
+<body>
+<main>
+
+<details class="form-item">
+<summary>Kartu Tanda Penduduk (KTP-el)</summary>
+
+<div class="form-content">
+
+<section class="layanan">
+<h2>KTP-el Baru Perekaman</h2>
+<ol>
+<li>Yang bersangkutan datang ke Kantor Dukcapil Kota Jayapura.</li>
+<li>Asli Kartu Keluarga Kota Jayapura.</li>
+</ol>
+</section>
+
+<section class="layanan">
+<h2>KTP-el Hilang</h2>
+<ol>
+<li>Download dan mengisi FORMULIR F1.02
+<a class="download" href="#" onclick="return false;">&gt;&gt; Download Disini &lt;&lt;</a></li>
+<li>Surat keterangan kehilangan KTP-el dari Kepolisian.</li>
+</ol>
+<p class="catatan">* Masa berlaku surat keterangan hilang selama 14 hari.</p>
+<ol start="3">
+<li>Asli Kartu Keluarga.</li>
+</ol>
+</section>
+
+<section class="layanan">
+<h2>KTP-el Rusak</h2>
+<ol>
+<li>Download dan mengisi FORMULIR F1.02
+<a class="download" href="#" onclick="return false;">&gt;&gt; Download Disini &lt;&lt;</a></li>
+<li>Asli Kartu Keluarga.</li>
+<li>Asli KTP-el yang rusak.</li>
+</ol>
+</section>
+
+<section class="layanan">
+<h2>KTP-el Ganti Spesimen Foto</h2>
+<ol>
+<li>Surat permohonan kepada Kepala Dinas Kependudukan dan Pencatatan Sipil Kota Jayapura, ditandatangani di atas meterai Rp10.000.
+<a class="download" href="#" onclick="return false;">&gt;&gt; Download Disini &lt;&lt;</a></li>
+<li>Asli KTP-el lama.</li>
+</ol>
+<p class="catatan">* Pergantian TTD dan foto setiap hari Jumat.</p>
+</section>
+
+<section class="layanan">
+<h2>KTP-el Ganti Spesimen Tanda Tangan</h2>
+<ol>
+<li>Surat permohonan kepada Kepala Dinas Kependudukan dan Pencatatan Sipil Kota Jayapura, ditandatangani di atas meterai Rp10.000.
+<a class="download" href="#" onclick="return false;">&gt;&gt; Download Disini &lt;&lt;</a></li>
+<li>Asli KTP-el lama.</li>
+</ol>
+<p class="catatan">* Pergantian TTD dan foto setiap hari Jumat.</p>
+</section>
+
+<section class="layanan">
+<h2>KTP-el Perubahan Elemen Data</h2>
+<ol>
+<li>Download dan mengisi FORMULIR F1.02
+<a class="download" href="#" onclick="return false;">&gt;&gt; Download Disini &lt;&lt;</a></li>
+<li>Asli Kartu Keluarga terbaru.</li>
+<li>Asli KTP-el yang akan diperbarui.</li>
+</ol>
+</section>
+
+<a class="kembali" href="index.html">← Kembali ke halaman utama</a>
+
+</div>
+</details>
+
+</main>
+</body>
+</html>
