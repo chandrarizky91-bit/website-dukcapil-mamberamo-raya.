@@ -67,27 +67,29 @@ body{
     .panel ul{padding-left:20px;margin:8px 0}
     .free-panel{display:flex;gap:16px;align-items:center}
     .free-panel img{width:120px;max-width:35%;height:auto;object-fit:contain}
-    footer{
+footer{
   background-color:#087f80;
   background-image:
-    linear-gradient(rgba(0,70,75,.18),rgba(0,70,75,.18)),
-   url("motif-papua-footer.png");
+    linear-gradient(rgba(0,70,75,.08),rgba(0,70,75,.08)),
+    url("motif-papua-footer.png");
   background-position:center center;
-background-size:100% auto;
-background-repeat:no-repeat;
+  background-size:100% 100%;
+  background-repeat:no-repeat;
+  min-height:100px;
+  box-sizing:border-box;
   color:#e6f6ff;
-  padding:26px 24px;
+  padding:16px 24px;
 }
-    .footer-inner{max-width:1420px;margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-    footer p{margin:4px 0;font-size:14px}
-    .draft{font-size:12px;opacity:.85}
-    @media(max-width:1000px){.slogan{display:none}.hero{grid-template-columns:1fr .75fr}.hero-copy{padding-left:30px}.services{grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:700px){.head-inner{padding:10px 16px;gap:12px}.crest{width:60px;height:60px}.identity{font-size:14px}.identity span{font-size:12px}main{padding:18px 14px 38px}.nav-inner{padding:0 8px}.nav a{padding:12px 13px;font-size:14px}.hero{grid-template-columns:1fr;min-height:0;border-radius:22px}.hero-copy{padding:26px 22px 8px}.hero-copy p{font-size:15px}.hero-visual{min-height:280px}.portrait{max-height:310px;width:min(330px,82%)}.free-badge{width:110px;right:10px;top:12px}.notice{padding:12px;font-size:13px;align-items:flex-start}.notice-icon{width:34px;height:34px;font-size:21px}.services{grid-template-columns:1fr}.service{min-height:110px}.lower-grid{grid-template-columns:1fr}.section-icon{width:50px;height:50px;font-size:24px}h1{font-size:38px}}
-  .identity {
-  flex: 1;
-  min-width: 0;
-  overflow: hidden;
+.footer-inner{
+  max-width:1420px;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  flex-wrap:wrap;
 }
+footer p{margin:4px 0;font-size:14px}
+.draft{font-size:12px;opacity:.85}
 .judul-bergerak {
   display: block;
   width: 100%;
